@@ -266,28 +266,30 @@
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="pcard"><div class="pcard-inner">
-        <div class="pcard-head"><h3>Student Management</h3><span class="ptype">React Application</span></div>
+        <div class="pcard-head"><h3>HRCode_Academy
+</h3><span class="ptype">React Application</span></div>
         <p>A structured student management interface focused on clean data presentation.</p>
         <div class="ptech"><span>React</span><span>JavaScript</span><span>CSS</span></div>
-        <div class="plinks"><a class="mag" href="#">Live demo →</a><a class="mag" href="#">Source →</a></div>
+        <div class="plinks"><a class="mag" href="https://haseebraza01.netlify.app/">Live demo →</a><a class="mag" href="#">Source →</a></div>
       </div></div>
       <div class="pcard"><div class="pcard-inner">
-        <div class="pcard-head"><h3>Nova AI</h3><span class="ptype">React Application</span></div>
+        <div class="pcard-head"><h3>PDF-Generator</h3><span class="ptype">React Application</span></div>
         <p>An AI-focused interface built with React — replace this with your real project description.</p>
         <div class="ptech"><span>React</span><span>JavaScript</span><span>CSS</span></div>
-        <div class="plinks"><a class="mag" href="#">Live demo →</a><a class="mag" href="#">Source →</a></div>
+        <div class="plinks"><a class="mag" href="https://haseebraza10.github.io/PDF-Generator/">Live demo →</a><a class="mag" href="#">Source →</a></div>
       </div></div>
       <div class="pcard"><div class="pcard-inner">
-        <div class="pcard-head"><h3>Your Next Project</h3><span class="ptype">React Application</span></div>
+        <div class="pcard-head"><h3>Flow-space
+</h3><span class="ptype">React Application</span></div>
         <p>Swap this in for a third project — a short line on what it does and the problem it solves.</p>
         <div class="ptech"><span>React</span><span>JavaScript</span><span>CSS</span></div>
-        <div class="plinks"><a class="mag" href="#">Live demo →</a><a class="mag" href="#">Source →</a></div>
+        <div class="plinks"><a class="mag" href="https://haseebraza10.github.io/Flow-space/">Live demo →</a><a class="mag" href="#">Source →</a></div>
       </div></div>
       <div class="pcard"><div class="pcard-inner">
-        <div class="pcard-head"><h3>Personal Portfolio</h3><span class="ptype">React Application</span></div>
+        <div class="pcard-head"><h3>DEV-TOOLBOX</h3><span class="ptype">React Application</span></div>
         <p>This very site — an interactive, animated portfolio built with React and custom motion design.</p>
         <div class="ptech"><span>React</span><span>JavaScript</span><span>Three.js</span></div>
-        <div class="plinks"><a class="mag" href="#">Live demo →</a><a class="mag" href="#">Source →</a></div>
+        <div class="plinks"><a class="mag" href="https://haseebraza10.github.io/DEV-TOOLBOX/">Live demo →</a><a class="mag" href="#">Source →</a></div>
       </div></div>
     </div>
   </div>
@@ -318,9 +320,9 @@
     <h2>Contact</h2>
     <div class="contact-grid">
       <div class="contact-info">
-        <div class="label">Email</div><a class="mag" href="mailto:haseeb.example@gmail.com">haseeb.example@gmail.com</a>
-        <div class="label">GitHub</div><a class="mag" href="https://github.com/haseebrazashahid" target="_blank">github.com/haseebrazashahid</a>
-        <div class="label">LinkedIn</div><a class="mag" href="https://linkedin.com/in/haseebrazashahid" target="_blank">linkedin.com/in/haseebrazashahid</a>
+        <div class="label">Email</div><a class="mag" href="mailto:haseebrazashahid0@gmail.com">haseebrazashahid0@gmail.com</a>
+        <div class="label">GitHub</div><a class="mag" href="https://github.com/HASEEBRAZA10" target="_blank">github.com/haseebrazashahid</a>
+        <div class="label">LinkedIn</div><a class="mag" href="https://www.linkedin.com/in/haseeb-raza-shahid-96859b390/" target="_blank">linkedin.com/in/haseebrazashahid</a>
       </div>
       <form onsubmit="event.preventDefault(); alert('Static template — connect a form service or backend to receive messages.');">
         <input type="text" placeholder="Name" required>
@@ -615,6 +617,44 @@ function stick(){
   requestAnimationFrame(stick);
 }
 setTimeout(()=>{sresize(); stick();},50);
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
 </script>
 </body>
 </html>
